@@ -58,8 +58,9 @@ section{ padding:70px 0; }
 }
 .topbar .wrap{
   display:flex; align-items:center; justify-content:space-between;
-  padding-top:22px; padding-bottom:22px; flex-wrap:wrap; gap:16px;
+  padding-top:22px; padding-bottom:22px; padding-right:70px; flex-wrap:wrap; gap:16px;
 }
+@media (max-width:760px){ .topbar .wrap{ padding-right:32px; } }
 .brand{
   font-family:'Playfair Display', serif; font-weight:700; font-size:1.7rem;
   color:var(--maroon); text-decoration:none;
