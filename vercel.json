@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/bridge-community", "destination": "/bridge-community.html" },
+    { "source": "/research-work", "destination": "/research-work.html" },
+    { "source": "/percepta", "destination": "/percepta.html" },
+    { "source": "/:path*", "destination": "/:path*.html" }
+  ]
+}
