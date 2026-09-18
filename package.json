@@ -2,7 +2,7 @@
   "name": "gia-portfolio",
   "version": "1.0.0",
   "scripts": {
-    "dev": "http-server -p 8000 -c-1"
+    "dev": "node server.js"
   },
   "devDependencies": {
     "http-server": "^14.1.1"
