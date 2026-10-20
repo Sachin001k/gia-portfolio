@@ -4,6 +4,8 @@
     { "source": "/bridge-community", "destination": "/bridge-community.html" },
     { "source": "/research-work", "destination": "/research-work.html" },
     { "source": "/percepta", "destination": "/percepta.html" },
+    { "source": "/work-experience", "destination": "/work-experience.html" },
+    { "source": "/contact", "destination": "/contact.html" },
     { "source": "/:path*", "destination": "/:path*.html" }
   ]
 }

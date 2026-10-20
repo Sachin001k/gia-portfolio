@@ -6,16 +6,22 @@ const PORT = 8000;
 const PUBLIC_DIR = path.join(__dirname);
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(PUBLIC_DIR, req.url);
+  // Decode %20 etc. (image folders have spaces) and drop any query string
+  const urlPath = decodeURIComponent(req.url.split('?')[0]);
+  let filePath = path.join(PUBLIC_DIR, urlPath);
+
+  // Don't serve anything outside the project folder
+  if (!filePath.startsWith(PUBLIC_DIR)) {
+    res.writeHead(403);
+    res.end();
+    return;
+  }
 
   // Handle clean URLs - try to serve HTML files without extension
-  if (!filePath.endsWith('.html') && !filePath.endsWith('.css') && !filePath.endsWith('.js') && !filePath.endsWith('.json') && !req.url.includes('.')) {
-    // Try .html file first
+  if (!path.extname(urlPath)) {
     const htmlPath = filePath + '.html';
     if (fs.existsSync(htmlPath)) {
       filePath = htmlPath;
-    } else if (req.url === '/' && fs.existsSync(path.join(PUBLIC_DIR, 'index.html'))) {
-      filePath = path.join(PUBLIC_DIR, 'index.html');
     }
   }
 
@@ -32,7 +38,7 @@ const server = http.createServer((req, res) => {
       return;
     }
 
-    const ext = path.extname(filePath);
+    const ext = path.extname(filePath).toLowerCase();
     const contentType = {
       '.html': 'text/html',
       '.css': 'text/css',
@@ -43,10 +49,13 @@ const server = http.createServer((req, res) => {
       '.jpeg': 'image/jpeg',
       '.gif': 'image/gif',
       '.svg': 'image/svg+xml',
+      '.webp': 'image/webp',
+      '.avif': 'image/avif',
+      '.pdf': 'application/pdf',
     }[ext] || 'application/octet-stream';
 
     res.writeHead(200, { 'Content-Type': contentType });
-    res.end(content, 'utf-8');
+    res.end(content);
   });
 });
 
