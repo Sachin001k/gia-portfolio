@@ -9,25 +9,31 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#6f1f1f">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css?v=9e840eb6">
 </head>
 <body>
 
-<header class="topbar">
-  <div class="wrap">
-    <a class="brand" href="/">Gia Gupta</a>
-    <nav class="menu">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/bridge-community">Bridge Community</a></li>
-        <li><a href="/research-work">Research Work</a></li>
-        <li><a href="/percepta">Percepta</a></li>
-        <li><a href="/work-experience">Work Experience</a></li>
-        <li><a href="/contact" class="active">Contact</a></li>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/" aria-label="Gia Gupta — home">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5C9.2 6.3 4.5 9.2 4.5 13.4a4.1 4.1 0 0 0 6.6 3.2L9.6 21h4.8l-1.5-4.4a4.1 4.1 0 0 0 6.6-3.2C19.5 9.2 14.8 6.3 12 2.5z"/></svg></span>
+      <span class="brand-name">Gia Gupta<small>Bridge &middot; Research &middot; Percepta</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/bridge-community">Bridge Community</a></li>
+          <li><a href="/research-work">Research Work</a></li>
+          <li><a href="/percepta">Percepta</a></li>
+          <li><a href="/work-experience">Work Experience</a></li>
       </ul>
+      <a class="nav-cta" href="/contact" aria-current="page">Contact<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
   </div>
 </header>
+<main id="main">
 
 <section class="hero">
   <div class="wrap">
@@ -42,29 +48,47 @@
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap">
-    <div class="foot-brand">Gia Gupta</div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/bridge-community">Bridge Community</a></li>
-        <li><a href="/research-work">Research Work</a></li>
-        <li><a href="/percepta">Percepta</a></li>
-        <li><a href="/work-experience">Work Experience</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="icon-row">
-      <a class="icon-btn" href="https://www.linkedin.com/in/giagupta1/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M12 17v-7M12 13a2.5 2.5 0 0 1 5 0v4"/><circle cx="8" cy="7" r=".6" fill="currentColor"/></svg>LinkedIn</a>
-      <a class="icon-btn" href="https://github.com/giagupta22" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4"/></svg>GitHub</a>
-      <a class="icon-btn" href="https://www.instagram.com/bridgetosuccess.podcast/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>Instagram (podcast)</a>
-      <a class="icon-btn" href="mailto:giagupta.2007@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>giagupta.2007@gmail.com</a>
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a class="foot-brand" href="/" aria-label="Gia Gupta — home">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5C9.2 6.3 4.5 9.2 4.5 13.4a4.1 4.1 0 0 0 6.6 3.2L9.6 21h4.8l-1.5-4.4a4.1 4.1 0 0 0 6.6-3.2C19.5 9.2 14.8 6.3 12 2.5z"/></svg></span>
+          <span class="brand-name">Gia Gupta</span>
+        </a>
+        <p>Cards, curiosity, and too many books on the nightstand. Bridge player, researcher and builder from Mumbai.</p>
+      </div>
+      <nav class="foot-col" aria-label="Footer">
+        <h4>Explore</h4>
+        <ul class="foot-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/bridge-community">Bridge Community</a></li>
+          <li><a href="/research-work">Research Work</a></li>
+          <li><a href="/percepta">Percepta</a></li>
+          <li><a href="/work-experience">Work Experience</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <a class="foot-mail" href="mailto:giagupta.2007@gmail.com">giagupta.2007@gmail.com</a>
+        <div class="foot-social">
+          <a href="https://www.linkedin.com/in/giagupta1/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M12 17v-7M12 13a2.5 2.5 0 0 1 5 0v4"/><circle cx="8" cy="7" r=".6" fill="currentColor"/></svg></a>
+          <a href="https://github.com/giagupta22" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4"/></svg></a>
+          <a href="https://www.instagram.com/bridgetosuccess.podcast/" target="_blank" rel="noopener" aria-label="Instagram — Bridge to Success podcast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="https://youtube.com/@bridgetosuccess.podcast" target="_blank" rel="noopener" aria-label="YouTube — Bridge to Success podcast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
     </div>
-    <p class="copy">&copy; 2026 Gia Gupta</p>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Gia Gupta. All rights reserved.</span>
+      <a href="#main">Back to top &uarr;</a>
+    </div>
   </div>
 </footer>
-<script src="reader.js" defer></script>
+<script src="/site.js?v=8501b7af" defer></script>
+<script src="/reader.js?v=d4b5612d" defer></script>
 
 </body>
 </html>
