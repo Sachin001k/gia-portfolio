@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Work Experience – Gia Gupta</title>
 <meta name="description" content="Gia Gupta's internships across AI/ML, fintech and healthcare — Lenskart, BharatNXT and Masina Hospital.">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#6f1f1f">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,59 +29,90 @@
   </div>
 </header>
 
-<section class="hero" style="padding-bottom:20px;">
+<section class="hero" style="padding-bottom:30px;">
   <div class="wrap">
     <h1>Work Experience</h1>
     <p class="sub">Internships and professional roles across AI/ML, fintech, and healthcare.</p>
+    <div class="exp-summary">
+      <div><b>3</b><span>internships</span></div>
+      <div><b>3</b><span>industries</span></div>
+      <div><b>75%</b><span>cost cut at Lenskart</span></div>
+      <div><b>CREST Gold</b><span>at BharatNXT</span></div>
+    </div>
   </div>
 </section>
 
-<section style="padding-top:10px;">
+<section style="padding-top:30px;">
   <div class="wrap">
-    <article class="exp">
-      <div class="exp-logo"><img src="images/logos/lenskart.svg" alt="Lenskart"></div>
-      <div>
-        <h2>Lenskart</h2>
-        <div class="role">Product Development Partner &amp; AI/ML Intern</div>
-        <div class="when">January 2026 &ndash; July 2026 &middot; Delhi</div>
-        <p class="about">India&rsquo;s largest eyewear retailer, valued at over $4 billion, with 2,000+ stores globally.</p>
-        <ul>
-          <li>Building Percepta, an AI vision assistive pin for the visually impaired, in collaboration with Lenskart&rsquo;s R&amp;D team, after pitching directly to co-founders Peyush Bansal (CEO) and Amit Chaudhary (COO)</li>
-          <li>Conducting weekly development calls with Lenskart&rsquo;s engineering team; patent filing in process</li>
-          <li>Designing and iterating on a YOLO-based computer vision system embedded in a magnetic chest pin delivering real-time object, colour, and hazard detection</li>
-          <li>2-week internship working on Percepta with the R&amp;D team; reduced production cost by 75%, reduced latency by 25%</li>
-        </ul>
-        <a class="btn" href="/percepta">See Percepta &rarr;</a>
-      </div>
-    </article>
-
-    <article class="exp">
-      <div class="exp-logo"><img src="images/logos/bharatnxt.png" alt="BharatNXT"></div>
-      <div>
-        <h2>BharatNXT</h2>
-        <div class="role">Fintech Intern</div>
-        <div class="when">December 2025 &middot; Mumbai</div>
-        <p class="about">An Indian B2B fintech platform that allows businesses and MSMEs to make vendor payments, rent, utility bills, and GST using a credit card.</p>
-        <ul>
-          <li>Categorised 100+ user queries mapped to data sources; defined AI/human escalation logic, intent-based conversation flows, success metrics, and response standards for a digital payment platform serving MSMEs</li>
-          <li>Designed a Retrieval-Augmented Generation (RAG) framework implemented in their app</li>
-          <li>Received the CREST Gold Award</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="exp">
-      <div class="exp-logo"><span>Masina Hospital</span></div>
-      <div>
-        <h2>Masina Hospital</h2>
-        <div class="role">Lab Intern, Pathology Lab</div>
-        <div class="when">December 2024 &middot; Mumbai</div>
-        <p class="about">One of Mumbai&rsquo;s oldest charitable and leading multi-speciality hospitals.</p>
-        <ul>
-          <li>Completed an observership across the pathology and microbiology departments; studied diagnostic reports across multiple medical categories under supervising pathologists</li>
-        </ul>
-      </div>
-    </article>
+    <div class="exp-filters" role="group" aria-label="Filter by field"><button class="chip-btn" type="button" data-filter="all" aria-pressed="true">All <small>3</small></button><button class="chip-btn" type="button" data-filter="ai" aria-pressed="false">AI / ML <small>2</small></button><button class="chip-btn" type="button" data-filter="fintech" aria-pressed="false">Fintech <small>1</small></button><button class="chip-btn" type="button" data-filter="health" aria-pressed="false">Healthcare <small>1</small></button></div>
+    <ol class="timeline">
+      <li class="tl-item" data-filters="ai">
+        <div class="tl-date"><b>Jan &ndash; Jul 2026</b><span>7 months</span></div>
+        <article class="tl-card">
+          <div class="tl-head">
+            <div class="tl-logo"><img src="images/logos/lenskart.svg" alt="Lenskart"></div>
+            <div>
+              <h2>Lenskart</h2>
+              <div class="tl-role">Product Development Partner &amp; AI/ML Intern</div>
+            </div>
+          </div>
+          <div class="tl-meta"><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Delhi</span><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Jan &ndash; Jul 2026</span><span class="pill tag">AI / ML</span><span class="pill tag">Computer vision</span><span class="pill tag">Product</span></div>
+          <p class="tl-about">India&rsquo;s largest eyewear retailer, valued at over $4 billion, with 2,000+ stores globally.</p>
+          <div class="metrics"><div class="metric"><b>75%</b><span>lower production cost</span></div><div class="metric"><b>25%</b><span>lower latency</span></div><div class="metric"><b>&lt;200 ms</b><span>real-time detection</span></div><div class="metric"><b>CEO + COO</b><span>pitched directly to the co-founders</span></div></div>
+          <button class="tl-toggle" type="button" aria-expanded="true" aria-controls="more-lenskart">What I did <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="tl-more open" id="more-lenskart">
+            <div>
+              <ul><li>Building Percepta, an AI vision assistive pin for the visually impaired, in collaboration with Lenskart&rsquo;s R&amp;D team, after pitching directly to co-founders Peyush Bansal (CEO) and Amit Chaudhary (COO)</li><li>Conducting weekly development calls with Lenskart&rsquo;s engineering team; patent filing in process</li><li>Designing and iterating on a YOLO-based computer vision system embedded in a magnetic chest pin delivering real-time object, colour, and hazard detection</li><li>2-week internship working on Percepta with the R&amp;D team; reduced production cost by 75%, reduced latency by 25%</li></ul>
+              <a class="btn" href="/percepta">See Percepta<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="tl-item" data-filters="ai fintech">
+        <div class="tl-date"><b>Dec 2025</b><span>1 month</span></div>
+        <article class="tl-card">
+          <div class="tl-head">
+            <div class="tl-logo"><img src="images/logos/bharatnxt.png" alt="BharatNXT"></div>
+            <div>
+              <h2>BharatNXT</h2>
+              <div class="tl-role">Fintech Intern</div>
+            </div>
+          </div>
+          <div class="tl-meta"><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Mumbai</span><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Dec 2025</span><span class="pill tag">Fintech</span><span class="pill tag">AI / ML</span><span class="pill tag">RAG</span></div>
+          <p class="tl-about">An Indian B2B fintech platform that allows businesses and MSMEs to make vendor payments, rent, utility bills, and GST using a credit card.</p>
+          <div class="metrics"><div class="metric"><b>100+</b><span>user queries categorised</span></div><div class="metric"><b>RAG</b><span>framework designed for their app</span></div><div class="metric"><b>Gold</b><span>CREST Award</span></div></div>
+          <button class="tl-toggle" type="button" aria-expanded="false" aria-controls="more-bharatnxt">What I did <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="tl-more" id="more-bharatnxt">
+            <div>
+              <ul><li>Categorised 100+ user queries mapped to data sources; defined AI/human escalation logic, intent-based conversation flows, success metrics, and response standards for a digital payment platform serving MSMEs</li><li>Designed a Retrieval-Augmented Generation (RAG) framework implemented in their app</li><li>Received the CREST Gold Award</li></ul>
+              
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="tl-item" data-filters="health">
+        <div class="tl-date"><b>Dec 2024</b><span>Observership</span></div>
+        <article class="tl-card">
+          <div class="tl-head">
+            <div class="tl-logo mono" aria-hidden="true">M</div>
+            <div>
+              <h2>Masina Hospital</h2>
+              <div class="tl-role">Lab Intern, Pathology Lab</div>
+            </div>
+          </div>
+          <div class="tl-meta"><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Mumbai</span><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Dec 2024</span><span class="pill tag">Healthcare</span><span class="pill tag">Pathology</span><span class="pill tag">Microbiology</span></div>
+          <p class="tl-about">One of Mumbai&rsquo;s oldest charitable and leading multi-speciality hospitals.</p>
+          <div class="metrics"><div class="metric"><b>2</b><span>departments: pathology &amp; microbiology</span></div></div>
+          <button class="tl-toggle" type="button" aria-expanded="false" aria-controls="more-masina">What I did <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="tl-more" id="more-masina">
+            <div>
+              <ul><li>Completed an observership across the pathology and microbiology departments; studied diagnostic reports across multiple medical categories under supervising pathologists</li></ul>
+              
+            </div>
+          </div>
+        </article>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -103,6 +138,39 @@
     <p class="copy">&copy; 2026 Gia Gupta</p>
   </div>
 </footer>
-
+<script src="reader.js" defer></script>
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var items = document.querySelectorAll('.tl-item');
+  // expand / collapse
+  document.querySelectorAll('.tl-toggle').forEach(function(b){
+    b.addEventListener('click', function(){
+      var open = b.getAttribute('aria-expanded') !== 'true';
+      b.setAttribute('aria-expanded', open);
+      document.getElementById(b.getAttribute('aria-controls')).classList.toggle('open', open);
+    });
+  });
+  // filters
+  var chips = document.querySelectorAll('.chip-btn');
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      var f = c.dataset.filter;
+      chips.forEach(function(x){ x.setAttribute('aria-pressed', x === c); });
+      items.forEach(function(it){
+        var show = f === 'all' || it.dataset.filters.split(' ').indexOf(f) > -1;
+        it.hidden = !show;
+        if (show) it.classList.add('in');
+      });
+    });
+  });
+  // reveal on scroll
+  if (!('IntersectionObserver' in window)) { items.forEach(function(i){ i.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -10% 0px' });
+  items.forEach(function(i){ io.observe(i); });
+})();
+</script>
 </body>
 </html>
