@@ -957,3 +957,10 @@ section.gallery-group{ padding-top:0; padding-bottom:0; }
 section.gallery-group + section.gallery-group{ padding-top:44px; }
 .bb-media section.gallery-group{ margin-top:14px; }
 .g-item.tall{ grid-row:span 2; }
+
+/* larger tap areas without changing the look (audit: phone tap targets) */
+.quote-dots{ gap:4px; }
+.quote-dots button{ background-clip:content-box; padding:14px 4px; height:32px; width:36px; }
+.quote-dots button[aria-current="true"]::after{ inset:14px 4px; }
+.foot-mail, .foot-bottom a{ display:inline-block; padding:10px 0; margin:-10px 0; }
+.foot-mail{ margin-bottom:6px; }
