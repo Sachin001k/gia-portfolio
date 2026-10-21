@@ -48,7 +48,7 @@ p{ color:var(--text); margin:0 0 1.1em; }
 
 .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 32px; }
 .center{ text-align:center; }
-section{ padding:70px 0; }
+section{ padding:60px 0; }
 .section-gray{ background:var(--gray-bg); }
 
 /* ---------- HEADER ---------- */
@@ -133,7 +133,7 @@ section{ padding:70px 0; }
 @media (prefers-reduced-motion:reduce){ .site-header, .site-header .bar, .site-nav, .brand-mark{ transition:none; } }
 
 /* ---------- HERO (centered) ---------- */
-.hero{ padding:90px 0 70px; text-align:center; }
+.hero{ padding:44px 0 40px; text-align:center; }
 .hero h1{ margin-bottom:.25em; }
 .hero .sub{ max-width:62ch; margin:0 auto 34px; font-size:1.15rem; color:var(--text-soft); }
 
@@ -323,7 +323,7 @@ section{ padding:70px 0; }
 }
 
 /* ---------- SECTION HEAD ---------- */
-.section-title{ text-align:center; margin-bottom:44px; }
+.section-title{ text-align:center; margin-bottom:32px; }
 .section-title h2{ margin-bottom:.15em; }
 
 /* ---------- FOOTER ---------- */
@@ -373,7 +373,7 @@ footer a:focus-visible{ outline:2px solid var(--white); outline-offset:3px; bord
 
 .small{ font-size:.88rem; color:var(--text-soft); }
 .tagline{ font-family:'Playfair Display',serif; font-style:italic; font-size:1.3rem; color:var(--text); margin-bottom:1em; line-height:1.45; }
-@media (max-width:560px){ section{ padding:50px 0; } .wrap{ padding:0 20px; } .hero{ padding:60px 0 50px; } }
+@media (max-width:560px){ section{ padding:44px 0; } .wrap{ padding:0 20px; } .hero{ padding:28px 0 28px; } }
 .divider{ height:1px; background:var(--line); margin:50px 0; }
 /* ===========================================================
    v2 components — podcast, playing cards, scroll gallery,
@@ -929,3 +929,16 @@ html.js .tl-item.in{ opacity:1; transform:none; }
   .gg-head{ align-items:flex-start; flex-direction:column; gap:8px; }
 }
 .gallery-filters + .gallery-group{ margin-top:8px; }
+
+/* spacing: headings use tight line-height (body's 1.7 added big gaps above/below),
+   and the first block on each page sits close to the header */
+h1, h2, h3, h4{ line-height:1.15; }
+h1{ margin-bottom:.3em; }
+h2{ margin-bottom:.45em; }
+main > section:first-child:not(.hero){ padding-top:40px; }
+main > section:first-child .two-col{ align-items:start; }
+@media (max-width:860px){
+  main > section:first-child .two-col .portrait{ max-width:360px; }
+}
+@media (max-width:560px){ main > section:first-child:not(.hero){ padding-top:24px; } }
+.quotes{ margin-bottom:40px; } .podcast-intro{ margin-bottom:40px; }
