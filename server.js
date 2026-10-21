@@ -53,6 +53,7 @@ const server = http.createServer((req, res) => {
       '.webp': 'image/webp',
       '.avif': 'image/avif',
       '.pdf': 'application/pdf',
+      '.mp4': 'video/mp4',
     }[ext] || 'application/octet-stream';
 
     res.writeHead(200, { 'Content-Type': contentType });

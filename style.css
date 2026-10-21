@@ -921,7 +921,8 @@ html.js .tl-item.in{ opacity:1; transform:none; }
   flex-shrink:0; font-size:.8rem; font-weight:600; color:var(--maroon);
   background:rgba(111,31,31,.07); padding:5px 12px; border-radius:999px;
 }
-.gallery.few{ grid-template-columns:repeat(var(--n), 1fr); grid-auto-rows:280px; }
+.gallery.few{ grid-template-columns:repeat(var(--cols), 1fr); grid-auto-rows:280px; }
+.gallery.few .g-item img{ object-position:center 35%; }
 @media (max-width:860px){ .gallery.few{ grid-auto-rows:200px; } }
 @media (max-width:560px){
   .gallery.few{ grid-template-columns:1fr 1fr; grid-auto-rows:150px; }
@@ -942,3 +943,17 @@ main > section:first-child .two-col{ align-items:start; }
 }
 @media (max-width:560px){ main > section:first-child:not(.hero){ padding-top:24px; } }
 .quotes{ margin-bottom:40px; } .podcast-intro{ margin-bottom:40px; }
+
+/* BridgeBlitz media: videos + photo gallery */
+.bb-media{ margin-top:48px; }
+.bb-media .gallery-group{ margin-top:16px; }
+.bb-videos{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:4px; }
+.bb-videos figure{ margin:0; }
+.bb-videos video{ width:100%; aspect-ratio:816/464; border-radius:8px; background:var(--black); display:block; }
+.bb-videos figcaption{ font-size:.82rem; color:var(--text-soft); margin-top:6px; }
+@media (max-width:640px){ .bb-videos{ grid-template-columns:1fr; } }
+/* gallery sections are <section>s: drop the generic section padding */
+section.gallery-group{ padding-top:0; padding-bottom:0; }
+section.gallery-group + section.gallery-group{ padding-top:44px; }
+.bb-media section.gallery-group{ margin-top:14px; }
+.g-item.tall{ grid-row:span 2; }

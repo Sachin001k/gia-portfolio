@@ -23,7 +23,8 @@
     c.addEventListener('click', function () {
       var f = c.dataset.filter;
       all.forEach(function (x) { x.setAttribute('aria-pressed', x === c); });
-      groups.forEach(function (g) { g.hidden = f !== 'all' && g.dataset.event !== f; });
+      // only tournament sections are filtered; other galleries (e.g. BridgeBlitz) stay put
+      groups.forEach(function (g) { if (g.dataset.event) g.hidden = f !== 'all' && g.dataset.event !== f; });
     });
   });
 
